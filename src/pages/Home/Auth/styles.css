@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+  }
+  
+
+  .landing-page {
+    text-align: center;
+    padding: 1px;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 36px;
+  }
+  
+  .typewriter-section {
+    margin: 10px 0;
+  }
+  
+  .typewriter-text {
+    color: #fff;
+    font-size: 24px;
+    border-right: 0.15em solid #fff;
+    padding-right: 20px;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
+  
+  .registration-section {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .register-button {
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .register-button:hover {
+    background-color: #555;
+  }
