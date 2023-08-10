@@ -12,7 +12,7 @@ function Home() {
     <div>
      {authId ? (
           <>
-          {authId === 'Vgho33aaJeg0aGq0wM0kHP66MhU2' ?(
+          {authId === 'wgOpOiQOqoNvzWtlhwVS5PZpDFK2' ?(
             <Admin />
           ):(
             <Profile />
