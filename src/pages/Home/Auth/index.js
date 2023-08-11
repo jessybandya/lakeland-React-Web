@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 import BasicLayout from '../../../layouts/authentication/components/BasicLayout';
 
 const Auth = () => {
-  const [text, setText] = useState('');
-  const phrases = ['Provide Technical assistance', 'Stimulate economic growth','Etc...'];
   const gradientStyle = {
     background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     WebkitBackgroundClip: 'text', // For Safari support
@@ -19,34 +17,7 @@ const Auth = () => {
     familyFont: 'Roboto',
   };
 
-  useEffect(() => {
-    let currentIndex = 0;
-    let currentText = '';
-    let isDeleting = false;
-    let delay = 200;
 
-    const type = () => {
-      const currentPhrase = phrases[currentIndex % phrases.length];
-      if (!isDeleting && currentText === currentPhrase) {
-        isDeleting = true;
-        delay = 1000;
-      } else if (isDeleting && currentText === '') {
-        isDeleting = false;
-        currentIndex++;
-        delay = 200;
-      }
-
-      if (isDeleting) {
-        currentText = currentPhrase.substring(0, currentText.length - 1);
-      } else {
-        currentText = currentPhrase.substring(0, currentText.length + 1);
-      }
-
-      setText(currentText);
-    };
-
-    type();
-  }, []);
 
 
 

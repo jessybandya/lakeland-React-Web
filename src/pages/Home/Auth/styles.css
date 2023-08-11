@@ -44,29 +44,9 @@ body {
   .typewriter-text {
     color: #fff;
     font-size: 24px;
-    border-right: 0.15em solid #fff;
     padding-right: 20px;
-    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #fff;
-    }
-  }
+  }  
+
   
   .registration-section {
     margin-bottom: 10px;
