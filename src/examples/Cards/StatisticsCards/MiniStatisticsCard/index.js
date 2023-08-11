@@ -28,7 +28,7 @@ import SoftTypography from "../../../../soft-components/SoftTypography";
 function MiniStatisticsCard({ bgColor, title, count, icon, direction }) {
   
   return (
-    <Card style={{border:'2px solid #FF647F'}}>
+    <Card style={{border:'2px solid #8A8AFF'}}>
       <SoftBox bgColor={bgColor} variant="gradient">
         <SoftBox p={2}>
           <Grid container alignItems="center">
@@ -64,7 +64,7 @@ function MiniStatisticsCard({ bgColor, title, count, icon, direction }) {
                 <SoftTypography
                   variant="h5"
                   fontWeight="bold"
-                  style={{color:'#FF647F'}}
+                  style={{color:'#8A8AFF'}}
                 >
                   {count}{" "}
                    </SoftTypography>
@@ -74,7 +74,7 @@ function MiniStatisticsCard({ bgColor, title, count, icon, direction }) {
               <Grid item xs={4}>
                 <SoftBox
                 style={{
-                  background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+                  background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
                 }}
                   color={bgColor === "white" ? "white" : "dark"}
                   width="3rem"

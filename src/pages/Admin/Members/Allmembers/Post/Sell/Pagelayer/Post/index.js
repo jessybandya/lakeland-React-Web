@@ -130,7 +130,7 @@ style={{
 >
         <Modal.Header
         style={{
-            background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+            background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
             color:'#fff'
         }}
         closeButton>
@@ -138,7 +138,7 @@ style={{
         </Modal.Header>
         <Modal.Body
         style={{
-            background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+            background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
             height:'auto',
             overflowY:'auto'
         }}

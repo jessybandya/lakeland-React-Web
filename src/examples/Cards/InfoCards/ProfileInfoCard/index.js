@@ -308,7 +308,7 @@ function ProfileInfoCard({ title, description, info, social, action }) {
       style={{
         display:'flex',
         justifyContent:'space-between',
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         color:'#fff'
       }}
       >
@@ -319,23 +319,23 @@ function ProfileInfoCard({ title, description, info, social, action }) {
       </Modal.Header>
       <Modal.Body
       style={{
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         height:'auto',
         overflowY:'auto'
       }}
       >
         <MDBRow style={{
           height:'100%',
-          background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+          background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         }}  className="justify-content-center align-items-center h-100">
           <MDBCol
           style={{
             width:'100%',
             height:'100%',
-            background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+            background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
           }}
           lg="6" className="mb-4 mb-lg-0">
-            <MDBCard className="mb-3" style={{ borderRadius: '.5rem',height: '100%', background: 'linear-gradient(310deg, #FF3659, #FF647F)', border:'none' }}>
+            <MDBCard className="mb-3" style={{ borderRadius: '.5rem',height: '100%', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)', border:'none' }}>
               <MDBRow className="g-0">
                 <MDBCol md="4" className="gradient-custom text-center text-white"
                   style={{ borderTopLeftRadius: '.5rem', borderBottomLeftRadius: '.5rem' }}>
@@ -473,7 +473,7 @@ function ProfileInfoCard({ title, description, info, social, action }) {
       </Modal.Body>
       <Modal.Footer
       style={{
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
       }}
       >
         <Button style={{backgroundColor:'red', border:'1px solid red'}} onClick={requestAccountDelete}>Remove Account</Button>

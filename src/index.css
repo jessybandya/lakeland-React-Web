@@ -56,3 +56,6 @@ code {
 .MuiButton-outlined {
   border-color: #fff !important;
   }
+  .ant-spin-dot-item {
+    background-color: #fff;
+  }

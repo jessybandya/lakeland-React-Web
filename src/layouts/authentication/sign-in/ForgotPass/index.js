@@ -26,7 +26,7 @@ function ForgotPass({ setModalShowForgetPass }) {
         setLoading(false)
     }else{
         const config ={
-            url: `https://web-themes-kenya.web.app/login`,
+            url: `https://lakeland-kenya.web.app/login`,
             handleCodeInApp: true
         };
       
@@ -56,7 +56,7 @@ function ForgotPass({ setModalShowForgetPass }) {
   return (
     <SoftBox p={2}>
     <center><img src={logo} className="App-logo" alt="logo" /></center>
-    <center style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    <center style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     '-webkit-background-clip': 'text',
     color: 'transparent',
     fontWeight:'bold'
@@ -65,7 +65,7 @@ function ForgotPass({ setModalShowForgetPass }) {
     <SoftBox mb={2}>
       <SoftBox mb={1} ml={0.5}>
         <SoftTypography component="label" variant="caption" fontWeight="bold"
-        style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     '-webkit-background-clip': 'text',
     color: 'transparent',
     fontWeight:'bold'
@@ -80,7 +80,7 @@ function ForgotPass({ setModalShowForgetPass }) {
     </SoftBox>
 
     <SoftBox mt={4}>
-      <SoftButton style={{background:'linear-gradient(310deg, #FF3659, #FF647F)'}} onClick={resetPasword} variant="gradient" color="info" fullWidth>
+      <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}} onClick={resetPasword} variant="gradient" color="info" fullWidth>
       {loading === true ?(
         <span><span style={{color:'#fff'}}>loading...<Spin size="middle" /></span></span>
       ):(

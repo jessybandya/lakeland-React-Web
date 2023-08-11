@@ -14,7 +14,7 @@ const GradientBorderTableCell = ({ children }) => {
           left: 0,
           width: '100%',
           height: '2px',
-          background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+          background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         }}
       ></div>
     </TableCell>

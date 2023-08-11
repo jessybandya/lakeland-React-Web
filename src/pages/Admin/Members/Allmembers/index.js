@@ -59,15 +59,15 @@ export default function StickyHeadTable({ filteredPosts, searchTerm }) {
         <Table stickyHeader aria-label="sticky table">
           <TableHead sx={{ display: "table-header-group" }}>
             <TableRow>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}}>IMAGE</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">F. NAME</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">L. NAME</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">EMAIL</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">PHONE NO.</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">STATUS APPROVAL</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">REQUEST</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">DATE REGISTERED</TableCell>
-            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #FF647F",color:"#FF647F"}} align="right">ACTION</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}}>IMAGE</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">F. NAME</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">L. NAME</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">EMAIL</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">PHONE NO.</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">STATUS APPROVAL</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">REQUEST</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">DATE REGISTERED</TableCell>
+            <TableCell style={{minWidth:100,fontSize:12,backgroundColor: "",fontWeight:"900",borderBottom: "2px solid #8A8AFF",color:"#8A8AFF"}} align="right">ACTION</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

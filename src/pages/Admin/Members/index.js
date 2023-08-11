@@ -116,7 +116,7 @@ function Members() {
     sx={{ display: 'flex', alignItems: 'center'}}
   >
   <IconButton type="button" sx={{ p: '10px' }} aria-label="pdf">
-  <DownloadIcon onClick={downloadExcel} style={{color:'#FF647F'}}/>
+  <DownloadIcon onClick={downloadExcel} style={{color:'#8A8AFF'}}/>
 </IconButton>
     <InputBase
       sx={{ ml: 1, flex: 1 }}

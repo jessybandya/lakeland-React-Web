@@ -123,7 +123,7 @@ function ProfileInfoCard2({ title, description, action, pRate, McRate, dVRate, p
       >
       <Modal.Header closeButton
       style={{
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         color:'#fff'
       }}
       >

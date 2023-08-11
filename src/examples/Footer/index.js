@@ -59,7 +59,7 @@ function Footer({ company, links }) {
         &copy; {new Date().getFullYear()}
         <Link href={href} target="_blank">
           <SoftTypography variant="button"
-          style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+          style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
           '-webkit-background-clip': 'text',
           color: 'transparent',
         }}

@@ -134,7 +134,7 @@ const Contact = ({setModalShowContact}) => {
               {/*Grid row*/}
             </form>
             <div style={{marginTop:10}} className="text-center text-md-left">
-            <SoftButton style={{background:'linear-gradient(310deg, #FF3659, #FF647F)'}}  variant="gradient" color="info" fullWidth                     onClick={submitToAdmin}
+            <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}}  variant="gradient" color="info" fullWidth                     onClick={submitToAdmin}
             >
             {loading ? (
               <span>Submitting...</span>
@@ -149,14 +149,14 @@ const Contact = ({setModalShowContact}) => {
           {/*Grid column*/}
           <div className="col-md-3 text-center">
             <ul className="list-unstyled mb-0">
-              <li><i style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+              <li><i style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }} className="fas fa-map-marker-alt fa-2x" />
                 <p>Oginga Odinga street, Kisumu City, NYanza, Kenya</p>
               </li>
               <li><i className="fas fa-phone mt-4 fa-2x" 
-              style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+              style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}
@@ -164,7 +164,7 @@ const Contact = ({setModalShowContact}) => {
                 <p><a style={{color:'#000', fontWeight:'bold'}} href='tel:+254799314129'>+254799314129</a></p>
               </li>
               <li><i className="fas fa-envelope mt-4 fa-2x" 
-              style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+              style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}

@@ -107,7 +107,7 @@ function SignUp() {
     <Card style={{marginTop:100}}>
     <SoftBox p={3} mb={1} textAlign="center" >
     <SoftTypography variant="h5" fontWeight="medium"
-    style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}
@@ -131,7 +131,7 @@ function SignUp() {
 
 
         <SoftBox mt={2} mb={1}>
-          <SoftButton style={{background:'linear-gradient(310deg, #FF3659, #FF647F)'}} onClick={login} variant="gradient" color="info" fullWidth>
+          <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}} onClick={login} variant="gradient" color="info" fullWidth>
           {loading === true ?(
             <span><span style={{color:'#fff'}}>signing in...<Spin size="middle" /></span></span>
           ):(
@@ -147,7 +147,7 @@ function SignUp() {
               fontWeight="medium"
               textGradient
               onClick={() => setModalShowForgetPass(true)}
-              style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+              style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}
@@ -166,7 +166,7 @@ function SignUp() {
             color="info"
             fontWeight="medium"
             textGradient
-            style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+            style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}

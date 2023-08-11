@@ -73,13 +73,13 @@ function Post({
       isApproved:true
     })
     .then(()=>{
-      toast.success(`${firstName} ${lastName} is now verified`,{
+      toast.success(`${firstName} ${lastName} is now activated`,{
         position:'top-center'
       })
       handleCloseBackdrop()
     })
     .catch((err)=>{
-      toast.error(`Failed to verify ${firstName} ${lastName}`,{
+      toast.error(`Failed to activate ${firstName} ${lastName}`,{
         position:'top-center'
       })
       handleCloseBackdrop()
@@ -92,13 +92,13 @@ function Post({
       isApproved:false
     })
     .then(()=>{
-      toast.success(`${firstName} ${lastName} is now activated`,{
+      toast.success(`${firstName} ${lastName} is now unactivated`,{
         position:'top-center'
       })
       handleCloseBackdrop()
     })
     .catch((err)=>{
-      toast.error(`Failed to activate ${firstName} ${lastName}`,{
+      toast.error(`Failed to unactivate ${firstName} ${lastName}`,{
         position:'top-center'
       })
       handleCloseBackdrop()
@@ -191,10 +191,10 @@ function Post({
         )}
       </TableCell>
       <TableCell align="right">{
-        requestDelete === true ? (<span><CheckCircleOutlineIcon fontSize="medium" style={{color:'#FF647F'}}/></span>):(<span><ClearIcon fontSize="medium" style={{color:'#FF647F'}}/></span>)
+        requestDelete === true ? (<span><CheckCircleOutlineIcon fontSize="medium" style={{color:'#8A8AFF'}}/></span>):(<span><ClearIcon fontSize="medium" style={{color:'#8A8AFF'}}/></span>)
       }</TableCell>
       <TableCell align="right">{date.toDateString()}</TableCell>
-      <TableCell align="right"><DeleteForeverIcon fontSize="medium" onClick={deleteUser}  style={{color:'#FF647F',cursor:'pointer'}}/></TableCell>
+      <TableCell align="right"><DeleteForeverIcon fontSize="medium" onClick={deleteUser}  style={{color:'#8A8AFF',cursor:'pointer'}}/></TableCell>
 
       {isOpen && (
         <Lightbox

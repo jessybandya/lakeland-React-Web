@@ -178,7 +178,7 @@ const completeRegistration = () => {
     <Card style={{marginTop:100}}>
     <SoftBox p={3} mb={1} textAlign="center">
     <SoftTypography variant="h5" fontWeight="medium"
-    style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}
@@ -221,7 +221,7 @@ const completeRegistration = () => {
   </SoftBox>
 
         <SoftBox mt={2} mb={1}>
-          <SoftButton style={{background:'linear-gradient(310deg, #FF3659, #FF647F)'}} onClick={completeRegistration} variant="gradient" color="info" fullWidth>
+          <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}} onClick={completeRegistration} variant="gradient" color="info" fullWidth>
           {loading === true ?(
             <span><span style={{color:'#fff'}}>signing up...<Spin size="middle" /></span></span>
           ):(
@@ -237,7 +237,7 @@ const completeRegistration = () => {
               color="info"
               fontWeight="medium"
               textGradient
-              style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+              style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
               '-webkit-background-clip': 'text',
               color: 'transparent',
             }}

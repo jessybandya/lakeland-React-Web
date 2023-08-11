@@ -10,7 +10,7 @@ const Auth = () => {
   const [text, setText] = useState('');
   const phrases = ['Welcome to Lakeland Web Training', 'Learn Web Development', 'Build Amazing Websites'];
   const gradientStyle = {
-    background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     WebkitBackgroundClip: 'text', // For Safari support
     WebkitTextFillColor: 'transparent', // For Safari support
     color: '#000', // Fallback color for non-supporting browsers
@@ -72,13 +72,13 @@ const Auth = () => {
   <section className="registration-section">
     <h2></h2>
     <p
-    style={{cursor:'pointer', background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    style={{cursor:'pointer', background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     '-webkit-background-clip': 'text',
     color: 'transparent',
   }}
     >Join us to learn web development and build amazing websites.</p>
     <Link to='/register'>
-    <SoftButton style={{background:'linear-gradient(310deg, #FF3659, #FF647F)'}} variant="gradient" color="info" fullWidth>
+    <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}} variant="gradient" color="info" fullWidth>
       Register
     </SoftButton>
     </Link>

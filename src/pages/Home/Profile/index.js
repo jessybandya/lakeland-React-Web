@@ -8,11 +8,55 @@ import Swal from "sweetalert2";
 import { useSelector } from "react-redux";
 import CloseIcon from '@mui/icons-material/Close';
 import { Button, Form, Modal } from 'react-bootstrap';
+import { Paper, Table, TableBody, TableCell, TableContainer, IconButton, TableRow, Slide } from "@mui/material";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+
+
+function SlideTransition(props) {
+  return <Slide {...props} direction="up" />;
+}
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
+
+const data = [
+  ['Mpesa Paybill Number', '522533'],
+  ['Account Number', '7643035'],
+  ['Business Name', 'Lakeland Development Limited'],
+];
 
 function Profile() {
   const [currentUser, setCurrentUser] = useState()
   const [modalShow, setModalShow] = React.useState(false);
   const authId = useSelector((state) => state.authId);
+  const [open, setOpen] = React.useState(false);
+  const [text, setText] = React.useState('')
+  const vertical= "bottom"
+  const horizontal= "center"
+
+  const handleClick = (text) => {
+    setOpen(true);
+    setText(text)
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      handleClick(`Copied: ${text}`)
+    });
+  };
 
   const requestAccountDelete = () =>{
     Swal.fire({
@@ -94,7 +138,7 @@ function Profile() {
                 
                   <SoftButton
                     style={{
-                      background: "linear-gradient(310deg, #FF3659, #FF647F)",
+                      background: "linear-gradient(310deg, #0000FF, #8A8AFF)",
                       marginTop: 5,
                       width:'100%'
                     }}
@@ -108,7 +152,7 @@ function Profile() {
                   </SoftButton>
                 <SoftButton
                   style={{
-                    background: "linear-gradient(310deg, #FF3659, #FF647F)",
+                    background: "linear-gradient(310deg, #0000FF, #8A8AFF)",
                     marginTop: 5,
                   }}
                   variant="gradient"
@@ -169,30 +213,72 @@ function Profile() {
       style={{
         zIndex:1500
       }}
+      centered
     >
       <Modal.Header 
       style={{
         display:'flex',
         justifyContent:'space-between',
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         color:'#fff'
       }}
       >
         <Modal.Title id="contained-modal-title-vcenter">
-          Profile Edit
+          Make Payment
         </Modal.Title>
         <CloseIcon onClick={() => setModalShow(false)} fontSize="medium" style={{cursor:'pointer'}} />
       </Modal.Header>
       <Modal.Body
       style={{
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         height:'auto',
         overflowY:'auto'
       }}
       >
-         <center>Payment Account Details</center>
+      <TableContainer component={Paper}
+      style={{
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
+        height:'auto',
+        overflowY:'auto',
+        border:'1px solid #fff'
+      }}
+      >
+      <Table>
+        <TableBody>
+          {data.map((row, index) => (
+            <TableRow key={index}>
+              <TableCell
+              style={{
+                color:'#fff',
+                fontWeight:'bold'
+              }}
+              >{row[0]}</TableCell>
+              <TableCell align="right"
+              style={{
+                color:'#E8E8E8',
+              }}
+              >
+              {row[1]}
+              <IconButton onClick={() => copyToClipboard(row[1])}>
+              <ContentCopyIcon style={{color:'#D1D1D1'}}/>
+            </IconButton>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
       </Modal.Body>
     </Modal>
+
+    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}
+    anchorOrigin={{ vertical, horizontal }}
+    TransitionComponent={SlideTransition}
+    >
+    <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+      {text}
+    </Alert>
+  </Snackbar>
     </BasicLayout>
   );
 }

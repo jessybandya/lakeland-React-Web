@@ -50,14 +50,14 @@ const logout = () => {
     title: 'Logged out successfully',
     text: 'See you soon!',
   })
-  history('/')
+  history('/login')
 }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
     <AppBar
     style={{
-      background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+      background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
       zIndex: 1500,
       position: 'fixed', // Make the header fixed
       top: 0, // Distance from the top of the viewport
@@ -124,7 +124,7 @@ const logout = () => {
   >
   <Modal.Header
   style={{
-    background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+    background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     color:'#fff',
     display:'flex',
     justifyContent:'space-between',

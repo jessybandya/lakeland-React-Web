@@ -198,7 +198,7 @@ function Header({ firstName, lastName, profilePhoto, isApproved, wpBuilder, spBu
       <Modal.Header style={{
         display:'flex',
         justifyContent:'space-between',
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
         color:'#fff'
       }}>
         <Modal.Title id="contained-modal-title-vcenter">
@@ -208,7 +208,7 @@ function Header({ firstName, lastName, profilePhoto, isApproved, wpBuilder, spBu
       </Modal.Header>
       <Modal.Body
       style={{
-        background: 'linear-gradient(310deg, #FF3659, #FF647F)',
+        background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
       }}
       >
       {name === 'Learn' ?(
