@@ -26,7 +26,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 const data = [
   ['Mpesa Paybill Number', '522533'],
   ['Account Number', '7643035'],
-  ['Business Name', 'Lakeland Development Limited'],
+  ['Business Name', 'Lakeland Development'],
 ];
 
 function Profile() {

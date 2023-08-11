@@ -8,7 +8,7 @@ import BasicLayout from '../../../layouts/authentication/components/BasicLayout'
 
 const Auth = () => {
   const [text, setText] = useState('');
-  const phrases = ['Welcome to Lakeland Web Training', 'Learn Web Development', 'Build Amazing Websites'];
+  const phrases = ['Provide Technical assistance', 'Stimulate economic growth','Etc...'];
   const gradientStyle = {
     background: 'linear-gradient(310deg, #0000FF, #8A8AFF)',
     WebkitBackgroundClip: 'text', // For Safari support
@@ -43,7 +43,6 @@ const Auth = () => {
       }
 
       setText(currentText);
-      setTimeout(type, delay);
     };
 
     type();
@@ -64,10 +63,10 @@ const Auth = () => {
         className="content"
       >
     <div style={gradientStyle}>
-      <i>Lakeland Development</i>
+      <i>Welcome to Lakeland Development</i>
     </div>
     <section className="typewriter-section">
-    <h2 className="typewriter-text">{text}</h2>
+    <h2 className="typewriter-text">"Empowering Growth, Enriching Lives."</h2>
   </section>
   <section className="registration-section">
     <h2></h2>
@@ -76,7 +75,7 @@ const Auth = () => {
     '-webkit-background-clip': 'text',
     color: 'transparent',
   }}
-    >Join us to learn web development and build amazing websites.</p>
+    >The organization provides technical assistance, training, and other resources to support projects that create jobs, stimulate economic growth, and improve quality of life.</p>
     <Link to='/register'>
     <SoftButton style={{background:'linear-gradient(310deg, #0000FF, #8A8AFF)'}} variant="gradient" color="info" fullWidth>
       Register
